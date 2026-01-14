@@ -13,7 +13,7 @@ import {
 const App = () => {
   const isAuthorized = false;
   return (
-    <Router>
+    <Router basename="/ydx">
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/login" element={<LoginPage />} />
