@@ -1,0 +1,16 @@
+section.about {
+  padding: 25px 0 100px;
+}
+
+.about {
+  font-size: 16px;
+  color: #6c757d;
+  & .container {
+    padding: 0 15px;
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+}

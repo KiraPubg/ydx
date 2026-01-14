@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button,
+textarea,
+input {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Open Sans";
+  font-size: 23px;
+  &::selection {
+    background: #fed136;
+  }
+}
+
+img {
+  user-select: none;
+  -webkit-user-drag: none; /* Для старых версий браузеров Webkit (Chrome, Safari) */
+  -moz-user-drag: none; /* Для Firefox */
+  -ms-user-select: none; /* Для IE */
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.section {
+  padding: 100px 0;
+  text-align: center;
+  &__title {
+    margin-bottom: 15px;
+    font-size: 30px;
+  }
+  &.hero {
+    text-align: unset;
+  }
+}
+section.info,
+section.hero {
+  padding: 0;
+}
+
+.primary-bg {
+  background: #f8f9fa;
+}

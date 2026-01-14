@@ -1,0 +1,64 @@
+.header {
+  font-size: 17px;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  padding: 25px 10px;
+  transition: all 0.3s ease;
+  & > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &.scrolled {
+    padding: 10px;
+    background: #212529;
+  }
+  & img {
+    width: 100%;
+    vertical-align: middle;
+  }
+  &__logo {
+    cursor: pointer;
+    max-width: 40px;
+  }
+  &__list {
+    display: flex;
+    gap: 25px;
+    &-item {
+      cursor: pointer;
+      color: #fff;
+      text-transform: uppercase;
+      & a {
+        transition: color 0.2s ease;
+        &:hover,
+        &.active {
+          color: #ffcc00;
+        }
+      }
+      &.login-item {
+        max-width: 25px;
+        margin-left: 10px;
+        & a {
+          display: block;
+          margin-top: -2px;
+        }
+      }
+    }
+  }
+  &__burger {
+    display: none;
+    font-size: 12px;
+    padding: 13px;
+    border-radius: 8px;
+    background-color: #fed136;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+    & img {
+      max-width: 17px;
+    }
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+}

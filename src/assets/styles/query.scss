@@ -1,0 +1,154 @@
+@media (max-width: 998.98px) {
+  .info {
+    &__block img {
+      width: 50vw;
+    }
+  }
+  .tarrifs__list {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    &-item {
+      max-width: 35%;
+    }
+  }
+  .possibilities {
+    &__items {
+      justify-content: center;
+      display: block;
+      max-width: 500px;
+      margin: 0 auto;
+      &::before {
+        left: 32px;
+        transform: translateX(0);
+      }
+    }
+    &__item {
+      margin-left: 25px;
+      & p {
+        padding: 0 0 0 40px;
+        text-align: start;
+      }
+      &.reversed {
+        flex-direction: unset;
+        & p.possibilities__item-text {
+          padding: 0 0 0 40px;
+        }
+      }
+      &-icon {
+        top: 5px;
+        background: #e9ecef;
+        height: 15px;
+        width: 15px;
+        border: none;
+        left: 0;
+        transform: translate(0);
+      }
+    }
+  }
+}
+
+@media (max-width: 992.98px) {
+  .hero {
+    &__row {
+    }
+    &__col {
+      &-left {
+      }
+    }
+    &__img-block {
+      max-width: 50px;
+    }
+    &__codes {
+      border-right: 6px solid #fff;
+    }
+    &__code {
+      text-wrap: nowrap;
+      font-size: 30px;
+      line-height: 25px;
+    }
+    &__phone {
+      text-wrap: nowrap;
+      font-size: 60px;
+    }
+  }
+}
+
+@media (max-width: 768.98px) {
+  .tarrifs__list {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    &-item {
+      max-width: 60%;
+    }
+  }
+  .about {
+    &__row {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 452.98px) {
+  .hero {
+    &__col {
+      &-left {
+        flex-direction: column;
+        max-width: 70px;
+        align-items: flex-end;
+      }
+      &-right {
+        max-width: 125px;
+      }
+    }
+    &__codes {
+      padding: 0 10px 0 0;
+      margin: 0 0 20px 0;
+    }
+    &__row {
+      flex-direction: column;
+      align-items: flex-end;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    &__phone {
+      text-wrap: wrap;
+      line-height: 35px;
+    }
+  }
+}
+
+@media (max-width: 425.98px) {
+  .header {
+    padding: 10px;
+    background: #212529;
+    &__nav {
+      display: block;
+      background: #212529;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      position: absolute;
+      height: 0;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      &.active {
+        height: 225%;
+        padding-bottom: 20px;
+      }
+    }
+    &__list {
+      flex-direction: column;
+      padding-left: 20px;
+      &-item {
+        &.login-item {
+          margin: 0;
+        }
+      }
+    }
+    &__burger {
+      display: flex;
+    }
+  }
+}
