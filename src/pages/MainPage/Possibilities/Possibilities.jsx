@@ -41,7 +41,7 @@ const Possibilities = () => {
               key={idx}
               text={item.text}
               img={item.img}
-              isReversed={++idx % 2 === 0 ?? true}
+              isReversed={++idx % 2 === 0}
             />
           ))}
         </ul>
